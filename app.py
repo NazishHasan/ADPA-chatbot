@@ -9,16 +9,6 @@ import streamlit as st
 
 st.set_page_config(page_title="AL Dhafra Private Academy ChatBot", layout="centered")
 
-# Hide Hugging Face branding menu and footer
-hide_hf_style = """
-    <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-        header {visibility: hidden;}
-    </style>
-"""
-st.markdown(hide_hf_style, unsafe_allow_html=True)
-
 # API Key and Model Setup
 GROQ_API_KEY = st.secrets["KidsAPI"]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
@@ -29,7 +19,7 @@ avatar = Image.open("edubot.png")
 st.image(avatar, width=200)
 
 # Title
-st.title("🎓**عالِم أونلاين** - Al Dhafra Private Academy's Educational ChatBot for Students")
+st.title("🎓**عالِم أونلاين** - Al Dhafra Private Academy's Educational ChatBot-Student friendly")
 st.markdown("Hello! I’m **Aalim Online**, your smart helper chatbot 🤖. Type a question below in **ENGLISH** or **ARABIC** and I’ll answer — and read it aloud, too! 🎧")
 
 # Ask for the student's name
@@ -103,6 +93,3 @@ if st.button("Ask EduBot", key="ask_button"):
 st.markdown("---")
 st.markdown("💡 *Try questions like:*")
 st.markdown("- What is a fraction?\n- Explain the water cycle.\n- Tell me a grammar rule.\n- من هو مخترع الكهرباء؟")
-
-
-
