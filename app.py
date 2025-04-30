@@ -28,7 +28,7 @@ st.title("🎓**عالِم أونلاين** - Al Dhafra Private Academy's Educat
 st.markdown("Hello! I’m **Aalim Online**, your smart helper chatbot 🤖. Type a question below in **ENGLISH** or **ARABIC** and I’ll answer — and read it aloud, too! 🎧")
 
 # Load Avatar
-avatar = Image.open("edubot.png")
+avatar = Image.open("Robochatbot.png")
 st.image(avatar, width=200)
 
 # Ask for the student's name
