@@ -29,7 +29,7 @@ st.markdown("Hello! I’m **Aalim Online**, your smart helper chatbot 🤖. Type
 
 # Load Avatar
 avatar = Image.open("Robochatbot.png")
-st.image(avatar, width=200)
+st.image(avatar, width=400)
 
 # Ask for the student's name
 student_name = st.text_input("What is your name?")
