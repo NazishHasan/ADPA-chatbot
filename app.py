@@ -9,6 +9,16 @@ import streamlit as st
 
 st.set_page_config(page_title="AL Dhafra Private Academy ChatBot", layout="centered")
 
+# Hide Hugging Face branding menu and footer
+hide_hf_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_hf_style, unsafe_allow_html=True)
+
 # API Key and Model Setup
 GROQ_API_KEY = st.secrets["KidsAPI"]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
