@@ -4,7 +4,6 @@ import tempfile
 import os
 from gtts import gTTS
 from PIL import Image
-
 import streamlit as st
 
 st.set_page_config(page_title="AL Dhafra Private Academy ChatBot", layout="centered")
@@ -24,13 +23,13 @@ GROQ_API_KEY = st.secrets["KidsAPI"]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama3-70b-8192"
 
-# Load Avatar
-avatar = Image.open("edubot.png")
-st.image(avatar, width=200)
-
 # Title
 st.title("🎓**عالِم أونلاين** - Al Dhafra Private Academy's Educational ChatBot-Student friendly")
 st.markdown("Hello! I’m **Aalim Online**, your smart helper chatbot 🤖. Type a question below in **ENGLISH** or **ARABIC** and I’ll answer — and read it aloud, too! 🎧")
+
+# Load Avatar
+avatar = Image.open("edubot.png")
+st.image(avatar, width=200)
 
 # Ask for the student's name
 student_name = st.text_input("What is your name?")
