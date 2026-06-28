@@ -21,7 +21,7 @@ st.markdown(hide_hf_style, unsafe_allow_html=True)
 # API Key and Model Setup
 GROQ_API_KEY = st.secrets["KidsAPI"]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "llama3-70b-8192"
+MODEL = "openai/gpt-oss-120b"
 
 # Title
 st.title("🎓**عالِم أونلاين** - Al Dhafra Private Academy's Educational ChatBot-Student friendly")
